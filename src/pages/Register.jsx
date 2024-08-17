@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './register.css'; // Assuming the CSS file is in the same folder
 
 const Register = () => {
     useEffect(() => {

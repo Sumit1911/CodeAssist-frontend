@@ -8,12 +8,14 @@ import Notes from './pages/Notes'; // Component for the notes page
 import LeaderBoard from './pages/LeaderBoard'; // Component for the leaderboard page
 import UserProfile from './pages/UserProfile'; // Component for the user profile page (e.g., based on {name})
 import Logout from './pages/Logout'; // Component for the logout page
-import "./index.css"
+import Register from './pages/Register';
+import Login from './pages/Login';
+import Footer from './components/Footer';
 
 function App() {
     return (
         <Router>
-            <Navbar name="YourName" isLogged="Logout" />
+            <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/coming_soon" element={<About />} />
@@ -22,7 +24,10 @@ function App() {
                 <Route path="/leaderboard" element={<LeaderBoard />} />
                 <Route path="/:name" element={<UserProfile />} />
                 <Route path="/:isLogged" element={<Logout />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/login" element={<Login />} />
             </Routes>
+            <Footer/>
         </Router>
     );
 }

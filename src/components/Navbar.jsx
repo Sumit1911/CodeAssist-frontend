@@ -23,9 +23,9 @@ const Navbar = ({ name, isLogged }) => {
             <ul>
                 <li><Link to="/">HOME</Link></li>
                 <li><Link to="/coming_soon">ABOUT</Link></li>
-                <li><Link to="/quiz">QUIZ</Link></li>
+                <li><Link to="/quiz">PRACTICE</Link></li>
+                <li><Link to="/quiz">CONTESTS</Link></li>
                 <li><Link to="/notes">NOTES</Link></li>
-                <li><Link to="/leaderboard">LEADERBOARD</Link></li>
                 <li className="user-dropdown">
                     <a href="#" id="user-dropdown-toggle" onClick={toggleDropdown}>
                         <FaUser />  {/* Using the IoLogIn icon */}
